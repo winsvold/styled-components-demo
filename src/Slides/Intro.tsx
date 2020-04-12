@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Step from '../components/Step';
+import Step from '../components/Slide/Step';
 
 function Intro() {
     return (
