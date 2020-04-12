@@ -1,7 +1,14 @@
 import * as React from 'react';
+import Step from '../components/Step';
 
 function Intro() {
-    return <div>Dette er all about styled components!</div>;
+    return (
+        <div>
+            <Step>Dette er all about styled components!</Step>
+            <Step>Dette er mer om styled components blah</Step>
+            <Step>Dette er enda mer om styled components</Step>
+        </div>
+    );
 }
 
 export default Intro;

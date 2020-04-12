@@ -3,7 +3,7 @@ import { keyframes } from 'styled-components';
 const fadeIns = [
     keyframes`
       from {
-        top: 100%
+        transform: translateY(100%);
       }
     `,
     keyframes`
@@ -13,11 +13,11 @@ const fadeIns = [
     `,
     keyframes`
       from {
-        transform: rotate(90deg) translateX(100%);
+        transform: rotate(180deg) translateX(100vh);
       }
     `,
 ];
 
-export function randomFadeIn() {
-    return fadeIns[Math.floor(Math.random() * fadeIns.length)];
+export function randomFadeIn(seed: number) {
+    return fadeIns[Math.floor(seed * fadeIns.length)];
 }
