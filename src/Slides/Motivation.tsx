@@ -7,7 +7,7 @@ const Style = styled.div`
     max-width: 40rem;
     padding: 2rem;
     li {
-        margin-bottom: 2rem;
+        margin-bottom: 1.3rem;
     }
     strong {
         font-weight: bold;

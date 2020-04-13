@@ -8,7 +8,7 @@ import Step from '../components/Slide/Step';
 import ExternalLink from '../components/ExternalLink';
 
 const StyledImg = styled.img`
-    width: 90vw;
+    width: 80vmin;
 `;
 
 const Style = styled.div`

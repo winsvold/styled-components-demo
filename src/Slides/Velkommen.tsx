@@ -14,7 +14,7 @@ const Style = styled.div`
 `;
 
 const StyledImg = styled.img`
-    margin: 10vh 0;
+    margin: 5vh 0;
     background-color: white;
 `;
 
