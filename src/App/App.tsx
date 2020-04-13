@@ -1,11 +1,9 @@
-import React, { ReactNode, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import Slide from '../components/Slide/Slide';
-import Velkommen from '../Slides/Velkommen';
-import Intro from '../Slides/Intro';
-import Takkformeg from '../Slides/Takk for meg';
 import Progress from '../components/Progress';
 import { getStoredSlide, storeSlide } from '../utils/localStorage';
+import { SLIDES } from './SLIDES';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -20,9 +18,12 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+  *:focus {
+    outline: none;
+    transition: 0s;
+    filter: drop-shadow(0 0 .3rem gold);
+  }
 `;
-
-const slides: ReactNode[] = [<Velkommen />, <Intro />, <Takkformeg />];
 
 function App() {
     const [currentSlide, setCurrentSlide] = useState(+getStoredSlide());
@@ -33,17 +34,17 @@ function App() {
 
     const prevSlide = currentSlide <= 0 ? undefined : () => setCurrentSlide((prevState) => prevState - 1);
     const nextSlide =
-        currentSlide >= slides.length - 1 ? undefined : () => setCurrentSlide((prevState) => prevState + 1);
+        currentSlide >= SLIDES.length - 1 ? undefined : () => setCurrentSlide((prevState) => prevState + 1);
 
     return (
         <div>
             <GlobalStyle />
-            {slides.map((content, index) => (
+            {SLIDES.map((content, index) => (
                 <Slide currentSlide={index === currentSlide} prevSlide={prevSlide} nextSlide={nextSlide}>
                     {content}
                 </Slide>
             ))}
-            <Progress value={currentSlide + 1} max={slides.length} />
+            <Progress value={currentSlide + 1} max={SLIDES.length} />
         </div>
     );
 }

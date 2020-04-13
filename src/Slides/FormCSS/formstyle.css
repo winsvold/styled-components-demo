@@ -1,0 +1,21 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-button {
+    font-size: 200%;
+    background-color: gray;
+    border: .2rem white solid;
+}
+
+.form-button:hover {
+    opacity: .8;
+}
+
+.form-input {
+    font-size: 200%;
+    background-color: gray;
+    border: .2rem white solid;
+    margin-bottom: .3rem;
+}
