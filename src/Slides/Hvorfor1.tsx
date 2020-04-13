@@ -16,16 +16,21 @@ const Style = styled.div`
 `;
 
 const StyledLink = styled(ExternalLink)`
-    margin: 2rem 0;
+    margin: 1rem 0;
 `;
 
-function Intro() {
+const H1 = styled.h1`
+    margin: 0;
+`;
+
+function Hvorfor1() {
     return (
         <Style>
             <Step>
-                <h1>Hvorfor styled components?</h1>
+                <H1>Hvorfor styled components?</H1>
             </Step>
             <Step>
+                <h3>State of CSS</h3>
                 <StyledLink href="https://2019.stateofcss.com/technologies/css-in-js/">
                     https://2019.stateofcss.com/technologies/css-in-js/
                 </StyledLink>
@@ -34,13 +39,8 @@ function Intro() {
                 <StyledImg src={emtionImg} alt="emotion" />
                 <StyledImg src={legend} alt="legend" />
             </Step>
-            <Step>
-                <StyledLink href="https://www.thoughtworks.com/radar/languages-and-frameworks">
-                    https://www.thoughtworks.com/radar/languages-and-frameworks
-                </StyledLink>
-            </Step>
         </Style>
     );
 }
 
-export default Intro;
+export default Hvorfor1;

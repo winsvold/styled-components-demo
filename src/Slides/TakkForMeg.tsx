@@ -10,17 +10,11 @@ const spin = keyframes`
 `;
 
 const StyledDiv = styled.div`
-    animation: ${spin} 1s ease-out;
+    animation: ${spin} 1s 0.5s ease-out both;
 `;
 
-const Style = styled.div``;
-
-function Takkformeg() {
-    return (
-        <Style>
-            <StyledDiv>Takk for meg alle sammen!</StyledDiv>
-        </Style>
-    );
+function TakkForMeg() {
+    return <StyledDiv>Takk for meg</StyledDiv>;
 }
 
-export default Takkformeg;
+export default TakkForMeg;

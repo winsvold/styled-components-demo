@@ -1,18 +1,20 @@
 import React, { ReactNode } from 'react';
 import Velkommen from '../Slides/Velkommen';
-import Takkformeg from '../Slides/Takk for meg';
+import TakkForMeg from '../Slides/TakkForMeg';
 import EksempelStyling from '../Slides/EksempelStyling';
 import EksempelProps from '../Slides/EksempelProps';
 import Motivation from '../Slides/Motivation';
-import Intro from '../Slides/Intro';
+import Hvorfor1 from '../Slides/Hvorfor1';
 import EksempelAnimasjon from '../Slides/EksempelAnimasjon';
+import Hvorfor2 from '../Slides/Hvorfor2';
 
 export const SLIDES: ReactNode[] = [
     <Velkommen />,
-    <Intro />,
+    <Hvorfor1 />,
+    <Hvorfor2 />,
     <EksempelStyling />,
     <EksempelProps />,
     <EksempelAnimasjon />,
     <Motivation />,
-    <Takkformeg />,
+    <TakkForMeg />,
 ];

@@ -6,6 +6,7 @@ import { randomFadeOut } from './fadeOuts';
 import { StepContext } from './StepContext';
 import { NavigationContext } from './NavigationContext';
 import NavKnapper from '../NavKnapper';
+import { style } from '../../utils/style';
 
 interface Props {
     children: ReactNode;
@@ -17,7 +18,7 @@ interface Props {
 const SlideStyle = styled.div<{ current: boolean; seed1: number; seed2: number }>`
     height: 100vh;
     width: 100vw;
-    border: 0.2rem #999 solid;
+    border: 0.2rem ${style.color.text} solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +26,7 @@ const SlideStyle = styled.div<{ current: boolean; seed1: number; seed2: number }
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #555;
+    background-color: ${style.color.slide};
     animation: ${(props) => (props.current ? randomFadeIn(props.seed1) : randomFadeOut(props.seed2))} 0.5s both;
     animation-delay: ${(props) => (props.current ? '.2s' : '0')};
 `;
