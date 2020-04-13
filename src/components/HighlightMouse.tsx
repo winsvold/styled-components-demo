@@ -10,8 +10,8 @@ const MouseHighlight = styled.div<{ mouse: UseMouseState }>`
     width: 2rem;
     border-radius: 50%;
     background-color: yellow;
-    box-shadow: 0 0 0.5rem #0008;
-    opacity: 0.3;
+    box-shadow: 0 0 0.5rem #000c;
+    opacity: 0.2;
     z-index: 1000;
     pointer-events: none;
 `;

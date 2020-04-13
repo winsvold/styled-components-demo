@@ -6,12 +6,12 @@ import EksempelProps from '../Slides/EksempelProps';
 import Motivation from '../Slides/Motivation';
 import Hvorfor1 from '../Slides/Hvorfor1';
 import EksempelAnimasjon from '../Slides/EksempelAnimasjon';
-import Hvorfor2 from '../Slides/Hvorfor2';
+import Hvordan from '../Slides/Hvordan';
 
 export const SLIDES: ReactNode[] = [
     <Velkommen />,
     <Hvorfor1 />,
-    <Hvorfor2 />,
+    <Hvordan />,
     <EksempelStyling />,
     <EksempelProps />,
     <EksempelAnimasjon />,
