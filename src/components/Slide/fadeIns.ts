@@ -19,5 +19,6 @@ const fadeIns = [
 ];
 
 export function randomFadeIn(seed: number) {
-    return fadeIns[Math.floor(seed * fadeIns.length)];
+    // return fadeIns[Math.floor(seed * fadeIns.length)];
+    return fadeIns[0];
 }

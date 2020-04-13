@@ -20,5 +20,6 @@ const fadeOuts = [
 ];
 
 export function randomFadeOut(seed: number) {
-    return fadeOuts[Math.floor(seed * fadeOuts.length)];
+    // return fadeOuts[Math.floor(seed * fadeOuts.length)];
+    return fadeOuts[0];
 }
