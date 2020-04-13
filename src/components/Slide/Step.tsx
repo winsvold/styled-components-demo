@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ReactNode, useContext, useState } from 'react';
 import { StepContext } from './StepContext';
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components/macro';
 import { useMount, useUnmount } from 'react-use';
 
 interface Props {
@@ -16,6 +16,7 @@ const Style = styled.div<{ show: boolean }>`
             transform: scale(0.8);
         `};
     transition: 0.3s;
+    display: inline-block;
 `;
 
 function Step(props: Props) {

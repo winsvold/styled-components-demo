@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components/macro';
 import Slide from '../components/Slide/Slide';
 import Progress from '../components/Progress';
 import { getStoredSlide, storeSlide } from '../utils/localStorage';

@@ -6,12 +6,12 @@ const Style = styled.div`
     top: 20%;
 `;
 
-function EksempelProps() {
+function EksempelAnimasjon() {
     return (
         <Style>
-            <h1>Eksempel, props</h1>
+            <h1>Eksempel, animasjon</h1>
         </Style>
     );
 }
 
-export default EksempelProps;
+export default EksempelAnimasjon;

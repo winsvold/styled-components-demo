@@ -1,6 +1,6 @@
 import * as React from 'react';
 import StyledButton from './Button';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { useContext } from 'react';
 import NavigationContext from './Slide/NavigationContext';
 

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 const Progress = styled.div<{ value: number; max: number }>`
     position: fixed;

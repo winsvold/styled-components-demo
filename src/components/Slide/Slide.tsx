@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { randomFadeIn } from './fadeIns';
 import { randomFadeOut } from './fadeOuts';
 import { StepContext } from './StepContext';
@@ -22,7 +22,6 @@ const SlideStyle = styled.div<{ current: boolean; seed1: number; seed2: number }
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;

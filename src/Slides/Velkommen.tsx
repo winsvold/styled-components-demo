@@ -1,6 +1,6 @@
 import * as React from 'react';
 import logo from './img/logo.png';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import Code from '../components/Code';
 
 const Style = styled.div`

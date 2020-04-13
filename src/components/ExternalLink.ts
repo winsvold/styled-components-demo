@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 const ExternalLink = styled.a.attrs({ target: '_blank' })`
     color: white;
