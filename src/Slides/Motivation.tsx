@@ -14,10 +14,6 @@ const Style = styled.div`
     }
 `;
 
-const OverflødigStyling = styled.span`
-    filter: blur(5px);
-`;
-
 function Motivation() {
     return (
         <Style>
@@ -50,13 +46,10 @@ function Motivation() {
                 </Step>
                 <Step>
                     <li>
-                        <strong>Easier deletion of CSS</strong>
-                        <OverflødigStyling>
-                            : it can be hard to know whether a class name is used somewhere in your codebase.
-                            styled-components makes it obvious, as every bit of styling is tied to a specific component.
-                            If the component is unused (which tooling can detect) and gets deleted, all its styles get
-                            deleted with it.
-                        </OverflødigStyling>
+                        <strong>Easier deletion of CSS</strong>: it can be hard to know whether a class name is used
+                        somewhere in your codebase. styled-components makes it obvious, as every bit of styling is tied
+                        to a specific component. If the component is unused (which tooling can detect) and gets deleted,
+                        all its styles get deleted with it.
                     </li>
                 </Step>
                 <Step>
