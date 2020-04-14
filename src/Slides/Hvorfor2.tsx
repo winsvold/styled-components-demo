@@ -1,6 +1,6 @@
 import * as React from 'react';
 import thoughtWorks from './img/thoughtworks.png';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import ExternalLink from '../components/ExternalLink';
 
 const StyledImg = styled.img`

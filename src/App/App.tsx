@@ -45,7 +45,7 @@ function App() {
         <div ref={ref}>
             <GlobalStyle />
             {SLIDES.map((content, index) => (
-                <Slide currentSlide={index === currentSlide} prevSlide={prevSlide} nextSlide={nextSlide}>
+                <Slide key={index} currentSlide={index === currentSlide} prevSlide={prevSlide} nextSlide={nextSlide}>
                     {content}
                 </Slide>
             ))}

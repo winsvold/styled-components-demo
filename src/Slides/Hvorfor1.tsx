@@ -3,7 +3,7 @@ import emtionImg from './img/emotion.png';
 import cssmodulesImg from './img/cssmodules.png';
 import scImg from './img/styledcomponents.png';
 import legend from './img/legend.png';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import Step from '../components/Slide/Step';
 import ExternalLink from '../components/ExternalLink';
 

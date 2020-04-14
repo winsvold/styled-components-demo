@@ -1,10 +1,17 @@
 import { State as UseMouseState } from 'react-use/lib/useMouse';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
-const MouseHighlight = styled.div<{ mouse: UseMouseState }>`
+interface Props {
+    mouse: UseMouseState;
+}
+
+const MouseHighlight = styled.div.attrs((props: Props) => ({
+    style: {
+        top: props.mouse.docY,
+        left: props.mouse.docX,
+    },
+}))<Props>`
     position: fixed;
-    top: ${(props) => props.mouse.docY}px;
-    left: ${(props) => props.mouse.docX}px;
     transform: translate(-50%, -50%);
     height: 2rem;
     width: 2rem;
