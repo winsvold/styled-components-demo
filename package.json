@@ -7,7 +7,7 @@
     "eslint-config-prettier": "^6.10.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-use": "^14.1.1",
     "styled-components": "^5.1.0"
   },
@@ -21,7 +21,7 @@
     "@types/react-dom": "^16.9.6",
     "@types/styled-components": "^5.0.1",
     "customize-cra": "^0.9.1",
-    "customize-cra-react-refresh": "^1.0.1",
+    "customize-cra-react-refresh": "^1.1.0",
     "gh-pages": "^2.2.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.3",
